@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas - Sistema Hospitalar</title>
+    <link rel="stylesheet" href="consultas.css">
+</head>
+<body>
+    <header>
+        <img src="logo-hospital.png" alt="Logo do Hospital">
+        <h1>Hospital Última Esperança</h1>
+    </header>
+    <main>
+        <h1>Consultas Agendadas</h1>
+        <div class="pesquisa">
+            <input type="text" placeholder="Buscar consulta..." id="searchAppointment">
+            <button type="button" onclick="searchAppointment()"><img src="icon-lupa.png"></button>
+        </div>
+        <div class="addConsulta">
+            <button onclick="window.location.href='addConsulta.html'">Adicionar Consulta</button>
+        </div>
+        <table class="tabelaConsulta">
+            <thead>
+                <tr>
+                    <th>Paciente</th>
+                    <th>Médico</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João da Silva</td>
+                    <td>Dr. Paulo Alves</td>
+                    <td>10/10/2024</td>
+                    <td>Confirmada</td>
+                    <td>
+                        <button onclick="viewAppointment(1)">Ver Detalhes</button>
+                        <button onclick="editAppointment(1)">Editar</button>
+                        <button onclick="cancelAppointment(1)">Cancelar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Maria Oliveira</td>
+                    <td>Dra. Ana Costa</td>
+                    <td>15/10/2024</td>
+                    <td>Realizada</td>
+                    <td>
+                        <button onclick="viewAppointment(2)">Ver Detalhes</button>
+                        <button onclick="editAppointment(2)">Editar</button>
+                        <button onclick="cancelAppointment(2)">Cancelar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>Precisa de ajuda? Contate-nos pelo email juniorstanczak2005@gmail.com ou ligue para (47) 99275-7819</p>
+        <small>Desenvolvido por José Lorico Stanczak Junior. Todos os direitos reservados</small>
+    </footer>
+</body>
+</html>
