@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Paciente - Sistema Hospitalar</title>
+    <link rel="stylesheet" href="../static/styles/addPaciente.css">
+</head>
+<body>
+    <header>
+        <img src="./static/img/logo-hospital.png" alt="Logo do Hospital">
+        <h1>Hospital Última Esperança</h1>
+    </header>
+
+    <main>
+        <div class="voltar" onclick="voltar()">
+            <img src="./static/img/icon-voltar.png" alt="Ícone de voltar">
+        </div>
+        <h1>Adicionar Novo Paciente</h1>
+        <section class="adicionar-paciente">
+            <form action="cadastro" method="POST">
+                <div class="div-formulario">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" required>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="convenio">Convênio:</label>
+                    <input type="text" id="convenio" name="convenio">
+                </div>
+
+                <div class="div-formulario">
+                    <button type="submit">Salvar Paciente</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Precisa de ajuda? Contate-nos pelo email juniorstanczak2005@gmail.com ou ligue para (47) 99275-7819</p>
+        <small>Desenvolvido por José Lorico Stanczak Junior. Todos os direitos reservados</small>
+    </footer>
+    <script src="../static/script.js"></script>
+</body>
+</html>
